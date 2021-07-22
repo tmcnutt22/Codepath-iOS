@@ -32,6 +32,11 @@ class ViewController: UIViewController {
         //update tip and total amount labels
         tipAmountLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        twoSum()
+    }
+    
+    func twoSum() -> Int{
+        return 0
     }
 }
 
