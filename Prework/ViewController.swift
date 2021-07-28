@@ -11,12 +11,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        //make the textfield the first responder and keep the decimal pad open
         billAmountTextField.becomeFirstResponder()
         
+        //reload last bill amount
+        billAmountTextField.text = String(
+            UserDefaults.standard.double(forKey: "savedAmount"))
     }
-    let numberFormatter: NumberFormatter = NumberFormatter()
-    let localizesFormat: Bool = true
     
     @IBOutlet weak var billAmountTextField: UITextField!
     @IBOutlet weak var tipAmountLabel: UILabel!
@@ -25,8 +26,10 @@ class ViewController: UIViewController {
     
     @IBAction func calculateTip(_ sender: UISegmentedControl) {
         // Get bill amount from text field input
-        let bill: Double = Double(billAmountTextField.text!) ?? 0.0
-        
+
+        let bill: Double = Double(billAmountTextField.text!) ?? 0
+        //UserDefaults.standard.setValue(bill, forKey: "savedAmount")
+        UserDefaults.standard.setValue(bill, forKey: "savedAmount")
         // Get total tip by multiplying tip * tip %
         let tipPercentages: [Double] = [0.15, 0.20, 0.25]
         let tip: Double = bill * tipPercentages[tipControl.selectedSegmentIndex]
