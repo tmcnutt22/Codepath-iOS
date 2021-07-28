@@ -15,6 +15,7 @@
 		E220550026A8D63500AAD667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22054FE26A8D63500AAD667 /* LaunchScreen.storyboard */; };
 		E220550B26A8D63600AAD667 /* PreworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220550A26A8D63600AAD667 /* PreworkTests.swift */; };
 		E220551626A8D63600AAD667 /* PreworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220551526A8D63600AAD667 /* PreworkUITests.swift */; };
+		E23F49D426AA4F4800CA1A03 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = E23F49D326AA4F4800CA1A03 /* Property List.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E220551126A8D63600AAD667 /* PreworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E220551526A8D63600AAD667 /* PreworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreworkUITests.swift; sourceTree = "<group>"; };
 		E220551726A8D63600AAD667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E23F49D326AA4F4800CA1A03 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				E22054F326A8D62D00AAD667 /* AppDelegate.swift */,
 				E22054F526A8D62D00AAD667 /* SceneDelegate.swift */,
 				E22054F726A8D62D00AAD667 /* ViewController.swift */,
+				E23F49D326AA4F4800CA1A03 /* Property List.plist */,
 				E22054F926A8D62D00AAD667 /* Main.storyboard */,
 				E22054FC26A8D63500AAD667 /* Assets.xcassets */,
 				E22054FE26A8D63500AAD667 /* LaunchScreen.storyboard */,
@@ -233,6 +236,7 @@
 			files = (
 				E220550026A8D63500AAD667 /* LaunchScreen.storyboard in Resources */,
 				E22054FD26A8D63500AAD667 /* Assets.xcassets in Resources */,
+				E23F49D426AA4F4800CA1A03 /* Property List.plist in Resources */,
 				E22054FB26A8D62D00AAD667 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
