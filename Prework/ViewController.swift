@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         billAmountTextField.becomeFirstResponder()
         
         //reload last bill amount
-        billAmountTextField.text = String(
+        billAmountTextField.text = String(format: "%.2f",
             UserDefaults.standard.double(forKey: "savedAmount"))
     }
     
